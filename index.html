@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LEE HOLDINGS GROUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LEE HOLDINGS GROUP Home">
+        <img src="LEE HOLDINGS GROUP.png" alt="LEE HOLDINGS GROUP logo">
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="in-his-honor.html">In His Honor</a>
+        <a href="land-developments.html">Land Developments</a>
+        <a href="rentals.html">Rentals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="h1">LEE HOLDINGS GROUP</h1>
+          <p class="tagline">Built on Land. Designed for Legacy.</p>
+          <p class="lede">
+            LEE HOLDINGS GROUP is a land-focused investment and development company specializing in the
+            acquisition, strategic development, and long-term stewardship of real estate assets. We identify
+            high-potential land, guide it through thoughtful planning and development, and build enduring
+            opportunities for growth and future rental offerings.
+          </p>
+        </div>
+
+        <aside class="hero-card">
+          <p class="kicker">Core Focus</p>
+          <div class="pills">
+            <div class="pill"><strong>1</strong> Land Acquisition</div>
+            <div class="pill"><strong>2</strong> Land Development</div>
+            <div class="pill"><strong>3</strong> Rentals (Future)</div>
+          </div>
+
+          <p class="quote">
+            Quietly building long-term value through disciplined planning and purposeful land stewardship.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What We Do</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Acquisition</h3>
+          <p>We pursue land opportunities with long-term potential and clear strategic upside.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>We plan with intention—aligning land use, access, and future value through measured execution.</p>
+        </div>
+        <div class="card">
+          <h3>Rentals</h3>
+          <p>Our portfolio will expand into traditional and vacation rental offerings as projects mature.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="small muted">© <span id="y"></span> LEE HOLDINGS GROUP</div>
+      <div class="small">
+        Contact: <a href="mailto:leeholdingsbiz@gmail.com">leeholdingsbiz@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

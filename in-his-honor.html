@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>In His Honor • LEE HOLDINGS GROUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LEE HOLDINGS GROUP Home">
+        <img src="LEE HOLDINGS GROUP.png" alt="LEE HOLDINGS GROUP logo">
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="in-his-honor.html">In His Honor</a>
+        <a href="land-developments.html">Land Developments</a>
+        <a href="rentals.html">Rentals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="h1">In His Honor</h1>
+      <p class="tagline">A Legacy Worth Naming.</p>
+    </section>
+
+    <section class="section honor">
+      <div class="portrait">
+        <!-- Replace with your dad’s photo -->
+        <img src="Dad.png" alt="Portrait">
+      </div>
+
+      <div>
+        <h2 class="gold">The Name Behind the Group</h2>
+        <p>
+          LEE HOLDINGS GROUP is named in honor of my late father—whose character, work ethic, and belief
+          in building something meaningful continue to guide everything behind this company.
+        </p>
+        <p>
+          This page exists as a dedicated space for his memory: a quiet acknowledgment of the impact he
+          made, and the legacy that inspires the work we do today.
+        </p>
+        <p class="muted small">
+
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="small muted">© <span id="y"></span> LEE HOLDINGS GROUP</div>
+      <div class="small">
+        Contact: <a href="mailto:leeholdingsbiz@gmail.com">leeholdingsbiz@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

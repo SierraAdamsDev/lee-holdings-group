@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rentals • LEE HOLDINGS GROUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LEE HOLDINGS GROUP Home">
+        <img src="LEE HOLDINGS GROUP.png" alt="LEE HOLDINGS GROUP logo">
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="in-his-honor.html">In His Honor</a>
+        <a href="land-developments.html">Land Developments</a>
+        <a href="rentals.html">Rentals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="h1">Rentals</h1>
+      <p class="lede">
+        Coming soon. This page is intentionally structured for future growth—listings will be added as projects complete
+        development phases.
+      </p>
+
+      <div class="toolbar">
+        <div class="filters">
+          <input class="search" id="search" placeholder="Search by name, area, status…" />
+          <select class="select" id="filterCounty" aria-label="Filter by county"></select>
+          <select class="select" id="filterStatus" aria-label="Filter by status"></select>
+        </div>
+        <div class="small muted" id="count">0 results</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <input type="hidden" id="pageType" value="rental" />
+      <div class="cards" id="cards" aria-label="Rental cards"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="small muted">© <span id="y"></span> LEE HOLDINGS GROUP</div>
+      <div class="small">
+        Contact: <a href="mailto:leeholdingsbiz@gmail.com">leeholdingsbiz@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

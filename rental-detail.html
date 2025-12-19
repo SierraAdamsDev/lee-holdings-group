@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rental Detail • LEE HOLDINGS GROUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LEE HOLDINGS GROUP Home">
+        <img src="LEE HOLDINGS GROUP.png" alt="LEE HOLDINGS GROUP logo">
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="in-his-honor.html">In His Honor</a>
+        <a href="land-developments.html">Land Developments</a>
+        <a href="rentals.html">Rentals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="kicker"><a href="rentals.html">← Back to Rentals</a></p>
+      <h1 class="h1" id="detailTitle">Loading…</h1>
+      <p class="lede" id="detailAddress"></p>
+      <div class="badges" id="detailBadges"></div>
+    </section>
+
+    <section class="section">
+      <input type="hidden" id="detailPageType" value="rental" />
+
+      <div class="detail">
+        <div class="panel">
+          <img id="detailHero" src="" alt="" style="width:100%; height:320px; object-fit:cover; border-radius:14px; border:1px solid rgba(250,248,244,.12);" />
+          <div style="height:12px"></div>
+          <h2>Concept / Sketch Gallery</h2>
+          <div class="gallery" id="gallery"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Overview</h2>
+          <p id="overview"></p>
+
+          <div style="height:8px"></div>
+
+          <h2>Planned Use</h2>
+          <p id="vision"></p>
+
+          <div style="height:8px"></div>
+
+          <h2>Timeline</h2>
+          <div id="timeline"></div>
+
+          <div style="height:14px"></div>
+
+          <h2>Location</h2>
+          <div id="mapWrap"></div>
+
+          <div style="height:14px"></div>
+
+          <a id="emailLink" class="badge gold" href="mailto:leeholdingsbiz@gmail.com">
+            Email about this listing
+          </a>
+
+          <p class="small muted" style="margin-top:12px;">
+            No inquiry form—updates will be posted here as availability approaches.
+          </p>
+        </div>
+      </div>
+
+      <div id="detailBody" style="display:none"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="small muted">© <span id="y"></span> LEE HOLDINGS GROUP</div>
+      <div class="small">
+        Contact: <a href="mailto:leeholdingsbiz@gmail.com">leeholdingsbiz@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
