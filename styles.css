@@ -454,3 +454,23 @@ a:hover{opacity:.9}
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1600px) {
+  html,
+  body {
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+}
