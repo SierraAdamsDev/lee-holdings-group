@@ -447,3 +447,10 @@ a:hover{opacity:.9}
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1600px) {
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
