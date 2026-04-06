@@ -9,7 +9,7 @@
   --card2: rgba(250,248,244,.08);
   --shadow: 0 16px 40px rgba(0,0,0,.35);
   --radius: 18px;
-  --max: 1120px;
+  --max: 1380px;
 }
 
 *{box-sizing:border-box}
@@ -72,7 +72,7 @@ a:hover{opacity:.9}
 .gold{color:var(--gold)}
 
 .container{
-  width:min(var(--max), calc(100% - 40px));
+  width: min(var(--max), calc(100% - 64px));
   margin: 0 auto;
 }
 
@@ -152,9 +152,9 @@ a:hover{opacity:.9}
 }
 .hero-grid{
   display:grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap: 26px;
-  align-items:center;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 40px;
+  align-items:start;
 }
 .h1{
   font-family:"Libre Baskerville", Georgia, serif;
@@ -259,7 +259,7 @@ a:hover{opacity:.9}
 }
 .footer-inner{
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   justify-content:space-between;
   gap:18px;
   flex-wrap:wrap;
@@ -441,4 +441,20 @@ a:hover{opacity:.9}
   .search{min-width: 100%}
 }
 
+@media (min-width: 1440px){
+  :root{
+    --max: 1480px;
+  }
 
+  .hero{
+    padding: 48px 0 24px;
+  }
+
+  .section{
+    padding: 22px 0 34px;
+  }
+
+  .hero-grid{
+    gap: 48px;
+  }
+}
