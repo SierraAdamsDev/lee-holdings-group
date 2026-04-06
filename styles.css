@@ -442,7 +442,7 @@ a:hover{opacity:.9}
 }
 
 @media (min-width: 1600px) {
-  footer .container {
+  footer-inner .container {
     max-width: 1200px;
     margin: 0 auto;
   }
